@@ -170,9 +170,7 @@ public class Program extends Menu<String> {
         }
         
         ArrayList<Report> reports = new ArrayList<>();
-        int number = students.size();
-        for(int i = 0;i<number;i++){
-            
+
             for (Student s1 : students){
                 String id = s1.getId();
                 String name = s1.getName();
@@ -196,7 +194,7 @@ public class Program extends Menu<String> {
                     reports.add(new Report(name, course, total));
                 }
             }
-        }
+        
         
         for(int i =0;i<reports.size();i++){
             System.out.printf("%-15s|%-10s|%-5d\n",reports.get(i).getName(),reports.get(i).getCourse(),reports.get(i).getTotalCourse());
